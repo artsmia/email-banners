@@ -10,4 +10,4 @@ fi
 # (1) Resize, compress, save to $image; (2) copy to MIA_exhibition-signature.jpg; (3) rsync
 gm convert -resize 350x -compress JPEG -quality 90 originals/$image $image
 cp $image MIA-exhibition-signature.jpg
-rsync -av * /Volumes/d\$/WebSites/artsmia-redesign/images/email-banners
+rsync -av * archive:email-banners/
